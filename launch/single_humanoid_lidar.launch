@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- Arguments -->
+    <group ns="hu1">
+        <arg name="minDataTopic"   default="minData"/>
+        <arg name="scanTopic"      default="scan"/>
+        <node name="lidar_visual" pkg="lidar_visual" type="lidar_visual" output="screen">
+            <param name="minData_topic"        value="$(arg minDataTopic)"/>
+            <param name="scan_topic"          value="$(arg scanTopic)"/>
+        </node>
+    </group>
+      
+</launch>
