@@ -48,7 +48,7 @@ void MainWindow::laserCallback()
   vector<BeamInfo> m_dist;
   sensor_msgs::LaserScan lidarData = qnode.m_laserData;
   
-  double m_rhoZero = 5;
+  double m_rhoZero = 3;
 
   int m_kernelSize = 5;
 
