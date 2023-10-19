@@ -50,7 +50,7 @@ void MainWindow::laserCallback()
   
   double m_rhoZero = 3;
 
-  int m_kernelSize = 5;
+  int m_kernelSize = 3;
 
     // deg: -180 ~ 180
     int count = lidarData.scan_time / lidarData.time_increment;
